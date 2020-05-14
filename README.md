@@ -1,0 +1,18 @@
+
+
+DO NOT REUPLOAD TO TSPG (Same for older versions)
+Submit a ban request to the admin for that mod.
+
+Always check for new versions
+https://allfearthesentinel.net/zandronum/wads.php?user=2904
+
+resource from skulltag and realm667.
+
+Rune follow system from complex doom invasion by blood.
+
+This mod is for enjoying slaughter and enhanced doomguy and is not suitable for serious game play.
+
+Recommended mod
+- new_skill_true_ultimate_nightmare_v2.pk3 (Enhanced difficulty)
+
+Good dooming!

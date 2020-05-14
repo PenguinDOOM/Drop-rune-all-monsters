@@ -1,0 +1,1652 @@
+ACTOR CustomDoubleDamage : PowerDamage
+{
+	Damagefactor 2.0
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomDoubleFiringSpeed : PowerDoubleFiringSpeed
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomDrain : PowerDrain
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomSpread : PowerSpread
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomHalfDamage : PowerProtection
+{
+	Damagefactor 0.5
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomRegeneration : PowerRegeneration
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomProsperity : PowerProsperity
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomReflection : PowerReflection
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomHighJump : PowerHighJump
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR CustomSpeed25 : PowerSpeed
+{
+	Speed 1.5
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+/*ACTOR DemonFrightener : PowerFrightener
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+*/
+
+ACTOR DemonPower : PowerDamage
+{
+	Damagefactor 1.25
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR DemonDrain : PowerDrain
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR DemonIronFeet : PowerIronFeet
+{
+	Powerup.Duration 0x7FFFFFFD
+	Powerup.Color "FF FF FF", 0.01
+	DamageFactor "Slime", 0.0
+	DamageFactor "Lava", 0.0
+	DamageFactor "Poison", 0.0
+	DamageFactor "Acid", 0.0
+	DamageFactor "Virus", 0.0
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR RavenFlight : PowerHighJump
+{
+	Powerup.Strength 80
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR RavenGhost : PowerGhost
+{
+	Powerup.Strength 99
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR DevilIronFeet : PowerIronFeet
+{
+	Powerup.Duration 0x7FFFFFFD
+	Powerup.Color "FF FF FF", 0.01
+	DamageFactor "Slime", 0.0
+	DamageFactor "Lava", 0.0
+	DamageFactor "Poison", 0.0
+	DamageFactor "Acid", 0.0
+	DamageFactor "Virus", 0.0
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR DevilTorch : PowerTorch
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR DevilReflection : PowerReflection
+{
+	Damagefactor 1.0
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR DevilSpeed25 : PowerSpeed
+{
+	Speed 2.5
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR SatanIronFeet : PowerIronFeet
+{
+	Powerup.Duration 0x7FFFFFFD
+	Powerup.Color "FF FF FF", 0.01
+	DamageFactor "Slime", 0.0
+	DamageFactor "Lava", 0.0
+	DamageFactor "Poison", 0.0
+	DamageFactor "Acid", 0.0
+	DamageFactor "Virus", 0.0
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+/*ACTOR SatanFrightener : PowerFrightener
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	+NOTIMEFREEZE
+}*/
+
+ACTOR SatanGhost : PowerGhost
+{
+	Powerup.Strength 80
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	+NOTIMEFREEZE
+}
+
+ACTOR SatanRegeneration : PowerTargeter
+{
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	+NOTIMEFREEZE
+	States
+	{
+	Targeter:
+		TNT1 A 0
+		TNT1 A 0 HealThing(5,1000)
+		TNT1 A 16
+		Loop
+	}
+}
+
+ACTOR SatanProtection : PowerProtection
+{
+	Damagefactor 0.25
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	+NOTIMEFREEZE
+}
+
+ACTOR SatanReflection : PowerReflection
+{
+	Damagefactor 4.0
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+	+DONTBLAST
+	+DONTMORPH
+	+DONTRIP
+	+DONTSQUASH
+	+NOPAIN
+	+NORADIUSDMG
+	+NOTELEOTHER
+}
+
+ACTOR SatanDamage : PowerDamage
+{
+	Damagefactor 1.5
+	Powerup.Duration 0x7FFFFFFD
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+ACTOR StrengthCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon STRRA
+	Inventory.PickupMessage "$PICKUP_STRENGTH"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		STRR A 0 A_JumpIf(user_time >= 3,"MReady")
+		STRR A 0 A_SetUserVar("user_time",user_time+1)
+		STRR ABCD 6
+		Loop
+	MReady:
+		STRR A 0 A_ChangeFlag("FLOAT",1)
+		STRR A 0 A_ChangeFlag("FLOATBOB",1)
+		STRR A 0 A_ChangeFlag("NOGRAVITY",1)
+		STRR ABCD 6 A_Look
+		Loop
+	See:
+		STRR A 0 A_JumpIfTargetInlos(3)
+		STRR A 0 A_ClearTarget
+		STRR A 1
+		Goto MReady
+		STRR ABCD 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveStrength")
+		Stop
+	}
+}
+
+ACTOR RageCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon RAGRA
+	Inventory.PickupMessage "$PICKUP_RAGE"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		RAGR A 0 A_JumpIf(user_time >= 3,"MReady")
+		RAGR A 0 A_SetUserVar("user_time",user_time+1)
+		RAGR ABCDEFGH 6
+		Loop
+	MReady:
+		RAGR A 0 A_ChangeFlag("FLOAT",1)
+		RAGR A 0 A_ChangeFlag("FLOATBOB",1)
+		RAGR A 0 A_ChangeFlag("NOGRAVITY",1)
+		RAGR ABCDEFGH 6 A_Look
+		Loop
+	See:
+		RAGR A 0 A_JumpIfTargetInlos(3)
+		RAGR A 0 A_ClearTarget
+		RAGR A 1
+		Goto MReady
+		RAGR ABCDEFGH 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveRage")
+		Stop
+	}
+}
+
+ACTOR DrainCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon DRARA
+	Inventory.PickupMessage "$PICKUP_DRAIN"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		DRAR A 0 A_JumpIf(user_time >= 3,"MReady")
+		DRAR A 0 A_SetUserVar("user_time",user_time+1)
+		DRAR ABCD 6
+		Loop
+	MReady:
+		DRAR A 0 A_ChangeFlag("FLOAT",1)
+		DRAR A 0 A_ChangeFlag("FLOATBOB",1)
+		DRAR A 0 A_ChangeFlag("NOGRAVITY",1)
+		DRAR ABCD 6 A_Look
+		Loop
+	See:
+		DRAR A 0 A_JumpIfTargetInlos(3)
+		DRAR A 0 A_ClearTarget
+		DRAR A 1
+		Goto MReady
+		DRAR ABCD 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveDrain")
+		Stop
+	}
+}
+
+ACTOR SpreadCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon SPRRA
+	Inventory.PickupMessage "$PICKUP_SPREAD"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		SPRR A 0 A_JumpIf(user_time >= 3,"MReady")
+		SPRR A 0 A_SetUserVar("user_time",user_time+1)
+		SPRR ABCD 6
+		Loop
+	MReady:
+		SPRR A 0 A_ChangeFlag("FLOAT",1)
+		SPRR A 0 A_ChangeFlag("FLOATBOB",1)
+		SPRR A 0 A_ChangeFlag("NOGRAVITY",1)
+		SPRR ABCD 6 A_Look
+		Loop
+	See:
+		SPRR A 0 A_JumpIfTargetInlos(3)
+		SPRR A 0 A_ClearTarget
+		SPRR A 1
+		Goto MReady
+		SPRR ABCD 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveSpread")
+		Stop
+	}
+}
+
+ACTOR ResistanceCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon RESRA
+	Inventory.PickupMessage "$PICKUP_RESISTANCE"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		RESR A 0 A_JumpIf(user_time >= 3,"MReady")
+		RESR A 0 A_SetUserVar("user_time",user_time+1)
+		RESR ABCDEFGH 6
+		Loop
+	MReady:
+		RESR A 0 A_ChangeFlag("FLOAT",1)
+		RESR A 0 A_ChangeFlag("FLOATBOB",1)
+		RESR A 0 A_ChangeFlag("NOGRAVITY",1)
+		RESR ABCDEFGH 6 A_Look
+		Loop
+	See:
+		RESR A 0 A_JumpIfTargetInlos(3)
+		RESR A 0 A_ClearTarget
+		RESR A 1
+		Goto MReady
+		RESR ABCDEFGH 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveResistance")
+		Stop
+	}
+}
+
+ACTOR RegenerationCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon REGRA
+	Inventory.PickupMessage "$PICKUP_REGENERATION"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		REGR A 0 A_JumpIf(user_time >= 3,"MReady")
+		REGR A 0 A_SetUserVar("user_time",user_time+1)
+		REGR AB 6
+		Loop
+	MReady:
+		REGR A 0 A_ChangeFlag("FLOAT",1)
+		REGR A 0 A_ChangeFlag("FLOATBOB",1)
+		REGR A 0 A_ChangeFlag("NOGRAVITY",1)
+		REGR AB 6 A_Look
+		Loop
+	See:
+		REGR A 0 A_JumpIfTargetInlos(3)
+		REGR A 0 A_ClearTarget
+		REGR A 1
+		Goto MReady
+		REGR AB 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveRegeneration")
+		Stop
+	}
+}
+
+ACTOR ProsperityCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon PRSRA
+	Inventory.PickupMessage "$PICKUP_PROSPERITY"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		PRSR A 0 A_JumpIf(user_time >= 3,"MReady")
+		PRSR A 0 A_SetUserVar("user_time",user_time+1)
+		PRSR ABCD 6
+		Loop
+	MReady:
+		PRSR A 0 A_ChangeFlag("FLOAT",1)
+		PRSR A 0 A_ChangeFlag("FLOATBOB",1)
+		PRSR A 0 A_ChangeFlag("NOGRAVITY",1)
+		PRSR ABCD 6 A_Look
+		Loop
+	See:
+		PASR A 0 A_JumpIfTargetInlos(3)
+		PASR A 0 A_ClearTarget
+		PASR A 1
+		Goto MReady
+		PRSR ABCD 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveProsperity")
+		Stop
+	}
+}
+
+ACTOR ReflectionCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon REFRA
+	Inventory.PickupMessage "$PICKUP_REFLECTION"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		REFR A 0 A_JumpIf(user_time >= 3,"MReady")
+		REFR A 0 A_SetUserVar("user_time",user_time+1)
+		REFR AB 6
+		Loop
+	MReady:
+		REFR A 0 A_ChangeFlag("FLOAT",1)
+		REFR A 0 A_ChangeFlag("FLOATBOB",1)
+		REFR A 0 A_ChangeFlag("NOGRAVITY",1)
+		REFR AB 6 A_Look
+		Loop
+	See:
+		REFR A 0 A_JumpIfTargetInlos(3)
+		REFR A 0 A_ClearTarget
+		REFR A 1
+		Goto MReady
+		REFR AB 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveReflection")
+		Stop
+	}
+}
+
+ACTOR HighJumpCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon HIJRA
+	Inventory.PickupMessage "$PICKUP_HIGHJUMP"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		HIJR A 0 A_JumpIf(user_time >= 3,"MReady")
+		HIJR A 0 A_SetUserVar("user_time",user_time+1)
+		HIJR ABCD 6
+		Loop
+	MReady:
+		HIJR A 0 A_ChangeFlag("FLOAT",1)
+		HIJR A 0 A_ChangeFlag("FLOATBOB",1)
+		HIJR A 0 A_ChangeFlag("NOGRAVITY",1)
+		HIJR ABCD 6 A_Look
+		Loop
+	See:
+		HIJR A 0 A_JumpIfTargetInlos(3)
+		HIJR A 0 A_ClearTarget
+		HIJR A 1
+		Goto MReady
+		HIJR ABCD 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveHighJump")
+		Stop
+	}
+}
+
+ACTOR HasteCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon HASRA
+	Inventory.PickupMessage "$PICKUP_HASTE"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		HASR A 0 A_JumpIf(user_time >= 3,"MReady")
+		HASR A 0 A_SetUserVar("user_time",user_time+1)
+		HASR ABCD 6
+		Loop
+	MReady:
+		HASR A 0 A_ChangeFlag("FLOAT",1)
+		HASR A 0 A_ChangeFlag("FLOATBOB",1)
+		HASR A 0 A_ChangeFlag("NOGRAVITY",1)
+		HASR ABCD 6 A_Look
+		Loop
+	See:
+		HASR A 0 A_JumpIfTargetInlos(3)
+		HASR A 0 A_ClearTarget
+		HASR A 1
+		Goto MReady
+		HASR ABCD 6 A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveHaste")
+		Stop
+	}
+}
+
+ACTOR DemonCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon ARTILSKL
+	Inventory.PickupMessage "DemonRune"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		LCHS A 0 Bright A_JumpIf(user_time >= 3,"MReady")
+		LCHS A 0 Bright A_SetUserVar("user_time",user_time+1)
+		LCHS ABCD 3 Bright
+		Loop
+	MReady:
+		LCHS A 0 Bright A_ChangeFlag("FLOAT",1)
+		LCHS A 0 Bright A_ChangeFlag("FLOATBOB",1)
+		LCHS A 0 Bright A_ChangeFlag("NOGRAVITY",1)
+		LCHS ABCD 6 Bright A_Look
+		Loop
+	See:
+		LCHS A 0 A_JumpIfTargetInlos(3)
+		LCHS A 0 A_ClearTarget
+		LCHS A 1 Bright
+		Goto MReady
+		LCHS ABCD 6 Bright A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveDemon")
+		Stop
+	}
+}
+
+ACTOR RavenCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Scale 0.6
+	Inventory.Icon ICRVA0
+	Inventory.PickupMessage "RavenRune"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		ICRV B 0 Bright A_JumpIf(user_time >= 3,"MReady")
+		ICRV B 0 Bright A_SetUserVar("user_time",user_time+1)
+		ICRV BCDC 6 Bright
+		Loop
+	MReady:
+		ICRV B 0 Bright A_ChangeFlag("FLOAT",1)
+		ICRV B 0 Bright A_ChangeFlag("FLOATBOB",1)
+		ICRV B 0 Bright A_ChangeFlag("NOGRAVITY",1)
+		ICRV BCDC 6 Bright A_Look
+		Loop
+	See:
+		ICRV A 0 A_JumpIfTargetInlos(3)
+		ICRV A 0 A_ClearTarget
+		ICRV A 1 Bright
+		Goto MReady
+		ICRV BCDC 6 Bright A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveRaven")
+		Stop
+	}
+}
+
+ACTOR DevilCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon DEVIL
+	Inventory.PickupMessage "DevilRune"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		DEVI A 0 Bright A_JumpIf(user_time >= 3,"MReady")
+		DEVI A 0 Bright A_SetUserVar("user_time",user_time+1)
+		DEVI ABCD 6 Bright
+		Loop
+	MReady:
+		DEVI A 0 Bright A_ChangeFlag("FLOAT",1)
+		DEVI A 0 Bright A_ChangeFlag("FLOATBOB",1)
+		DEVI A 0 Bright A_ChangeFlag("NOGRAVITY",1)
+		DEVI ABCD 6 Bright A_Look
+		Loop
+	See:
+		DEVI A 0 A_JumpIfTargetInlos(3)
+		DEVI A 0 A_ClearTarget
+		DEVI A 1 Bright
+		Goto MReady
+		DEVI ABCD 6 Bright A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveDevil")
+		Stop
+	}
+}
+
+ACTOR SatanCustomRune : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon SATAN
+	Inventory.PickupMessage "SatanRune"
+	var int user_time;
+	Speed 20
+	States
+	{
+	Spawn:
+		SATA A 0 Bright A_JumpIf(user_time >= 3,"MReady")
+		SATA A 0 Bright A_SetUserVar("user_time",user_time+1)
+		SATA ABCD 6
+		Loop
+	MReady:
+		SATA A 0 Bright A_ChangeFlag("FLOAT",1)
+		SATA A 0 Bright A_ChangeFlag("FLOATBOB",1)
+		SATA A 0 Bright A_ChangeFlag("NOGRAVITY",1)
+		SATA ABCD 6 Bright A_Look
+		Loop
+	See:
+		SATA A 0 A_JumpIfTargetInlos(3)
+		SATA A 0 A_ClearTarget
+		SATA A 1 Bright
+		Goto MReady
+		SATA ABCD 6 Bright A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("ActiveSatan")
+		Stop
+	}
+}
+
+ACTOR ActiveStrength : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon STRRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active StrengthRune"
+	Inventory.UseSound "annstr"
+	States
+	{
+	Spawn:
+		STRR ABCD 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomDoubleDamage")
+		Stop
+	}
+}
+
+ACTOR ActiveRage : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon RAGRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active RageRune"
+	Inventory.UseSound "annrage"
+	States
+	{
+	Spawn:
+		RAGR ABCDEFGH 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomDoubleFiringSpeed")
+		Stop
+	}
+}
+
+ACTOR ActiveDrain : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon DRARA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active DrainRune"
+	Inventory.UseSound "anndrain"
+	States
+	{
+	Spawn:
+		DRAR ABCD 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomDrain")
+		Stop
+	}
+}
+
+ACTOR ActiveSpread : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon SPRRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active SpreadRune"
+	Inventory.UseSound "annspread"
+	States
+	{
+	Spawn:
+		SPRR ABCD 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomSpread")
+		Stop
+	}
+}
+
+ACTOR ActiveResistance : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon RESRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active ResistanceRune"
+	Inventory.UseSound "annresis"
+	States
+	{
+	Spawn:
+		RESR ABCDEFGH 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomHalfDamage")
+		Stop
+	}
+}
+
+ACTOR ActiveRegeneration : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon REGRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active RegenerationRune"
+	Inventory.UseSound "annregen"
+	States
+	{
+	Spawn:
+		REGR AB 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomRegeneration")
+		Stop
+	}
+}
+
+ACTOR ActiveProsperity: CustomInventory
+{
+	+INVBAR
+	Inventory.Icon PRSRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active ProsperityRune"
+	Inventory.UseSound "annprosp"
+	States
+	{
+	Spawn:
+		PRSR ABCD 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomProsperity")
+		Stop
+	}
+}
+
+ACTOR ActiveReflection : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon REFRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active ReflectionRune"
+	Inventory.UseSound "annrefl"
+	States
+	{
+	Spawn:
+		REFR BA 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomReflection")
+		Stop
+	}
+}
+
+ACTOR ActiveHighJump : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon HIJRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active HighJumpRune"
+	Inventory.UseSound "annhijump"
+	States
+	{
+	Spawn:
+		HIJR ABCD 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomHighJump")
+		Stop
+	}
+}
+
+ACTOR ActiveHaste : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon HASRA
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active HasteRune"
+	Inventory.UseSound "annhaste"
+	States
+	{
+	Spawn:
+		HASR ABCD 6
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("CustomSpeed25")
+		Stop
+	}
+}
+
+ACTOR ActiveDemon : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon ARTILSKL
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active DemonRune"
+	States
+	{
+	Spawn:
+		LCHS ABCD 3 Bright
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("DemonPower")
+		TNT1 A 1 A_GiveInventory("DemonDrain")
+		TNT1 A 1 A_GiveInventory("DemonIronFeet")
+		Stop
+	}
+}
+
+ACTOR ActiveRaven : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon ICRVA0
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active RavenRune"
+	States
+	{
+	Spawn:
+		ICRV BCDC 6 Bright
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("RavenFlight")
+		TNT1 A 1 A_GiveInventory("RavenGhost")
+		Stop
+	}
+}
+
+ACTOR ActiveDevil : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon DEVIL
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active DevilRune"
+	States
+	{
+	Spawn:
+		DEVI ABCD 3 Bright
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("DevilIronFeet")
+		TNT1 A 1 A_GiveInventory("DevilTorch")
+		TNT1 A 1 A_GiveInventory("DevilReflection")
+		Stop
+	}
+}
+
+ACTOR ActiveSatan : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon SATAN
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupMessage "Active SatanRune"
+	States
+	{
+	Spawn:
+		SATA ABCD 3 Bright
+		Loop
+	Use:
+		TNT1 A 1 A_GiveInventory("SatanIronFeet")
+		TNT1 A 1 A_GiveInventory("SatanGhost")
+		TNT1 A 1 A_GiveInventory("SatanRegeneration")
+		TNT1 A 1 A_GiveInventory("SatanProtection")
+		TNT1 A 1 A_GiveInventory("SatanReflection")
+		TNT1 A 1 A_GiveInventory("SatanDamage")
+		Stop
+	}
+}
+
+
+Actor Omamori : CustomInventory
+{
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.FANCYPICKUPSOUND
+	+INVENTORY.PICKUPFLASH
+	+FLOATBOB
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	Inventory.Icon STRRA
+	Inventory.PickupMessage "Omamori!"
+	var int user_time;
+	Speed 5
+	States
+	{
+	Spawn:
+		BDAM A 0 Bright A_JumpIf(user_time >= 8,"MReady")
+		BDAM A 0 Bright A_SetUserVar("user_time",user_time+1)
+		BDAM A 1 Bright
+		Loop
+	MReady:
+		BDAM A 0 Bright A_ChangeFlag("FLOAT",1)
+		BDAM A 0 Bright A_ChangeFlag("NOGRAVITY",1)
+		BDAM A 1 Bright A_Look
+		Loop
+	See:
+		BDAM A 0 Bright A_JumpIfTargetInlos(3)
+		BDAM A 0 Bright A_ClearTarget
+		BDAM A 1 Bright
+		Goto MReady
+		BDAM A 1 Bright A_Chase
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("OmamoriItem")
+		Stop
+	}
+}
+
+
+Actor OmamoriItem : CustomInventory
+{
+	+INVBAR
+	Inventory.Icon ARTIBDAM
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.UseSound "misc/invuse"
+	Inventory.PickupMessage "Omamori!"
+	Tag "Omamori"
+	States
+	{
+	Spawn:
+		BDAM A -1 Bright
+		Stop
+	Use:
+		TNT1 A 1 A_JumpIfInventory("OmamoriCheck", 1, "Failed")
+		TNT1 A 0 A_GiveInventory("OmamoriCheck")
+		TNT1 A 0 A_Print("Increased your life by one!")
+		TNT1 A 0 ACS_NamedExecute("Omamori_Script",0)
+		Stop
+	Failed:
+		TNT1 A 1 A_Print("Already in use")
+		Fail
+	}
+}
+
+Actor OmamoriCheck : Inventory
+{
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+}
+
+Actor OmamoriPower : ArtiTeleport
+{
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+}
+
+Actor Drag : CustomInventory
+{
+	Inventory.PickupMessage "Drag!"
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.Icon ARTISTIM
+	Renderstyle Add
+	+INVENTORY.FANCYPICKUPSOUND
+	+INVENTORY.NEVERRESPAWN
+	+INVENTORY.ALWAYSPICKUP
+	+FLOATBOB
+	+NOTIMEFREEZE
+	+AMBUSH
+	+LOOKALLAROUND
+	+NOBLOCKMONST
+	+NOTELEPORT
+	+NOFEAR
+	+NOPAIN
+	+NODAMAGE
+	+QUICKTORETALIATE
+	-SHOOTABLE
+	var int user_time;
+	Speed 5
+	States
+	{
+	Spawn:
+		STMP A 0 Bright A_JumpIf(user_time >= 8,"MReady")
+		STMP A 0 Bright A_SetUserVar("user_time",user_time+1)
+		STMP ABCD 6 Bright
+		Loop
+	MReady:
+		STMP A 0 Bright A_ChangeFlag("FLOAT",1)
+		STMP A 0 Bright A_ChangeFlag("FLOATBOB",1)
+		STMP A 0 Bright A_ChangeFlag("NOGRAVITY",1)
+		STMP ABCD 6 Bright A_Look
+		Loop
+	See:
+		STMP A 0 Bright A_JumpIfTargetInlos(3)
+		STMP A 0 Bright A_ClearTarget
+		STMP A 1 Bright 
+		Goto MReady
+		STMP A 0 Bright A_Chase
+		STMP A 1 Bright 
+		STMP A 0 Bright A_Chase
+		STMP A 1 Bright 
+		STMP A 0 Bright A_Chase
+		STMP A 1 Bright 
+		STMP A 0 Bright A_Chase
+		STMP A 1 Bright 
+		STMP A 0 Bright A_Chase
+		STMP A 1 Bright 
+		STMP A 0 Bright A_Chase
+		STMP A 1 Bright 
+		STMP B 0 Bright A_Chase
+		STMP B 1 Bright 
+		STMP B 0 Bright A_Chase
+		STMP B 1 Bright 
+		STMP B 0 Bright A_Chase
+		STMP B 1 Bright 
+		STMP B 0 Bright A_Chase
+		STMP B 1 Bright 
+		STMP B 0 Bright A_Chase
+		STMP B 1 Bright 
+		STMP B 0 Bright A_Chase
+		STMP B 1 Bright 
+		STMP C 0 Bright A_Chase
+		STMP C 1 Bright
+		STMP C 0 Bright A_Chase
+		STMP C 1 Bright
+		STMP C 0 Bright A_Chase
+		STMP C 1 Bright
+		STMP C 0 Bright A_Chase
+		STMP C 1 Bright
+		STMP C 0 Bright A_Chase
+		STMP C 1 Bright
+		STMP C 0 Bright A_Chase
+		STMP C 1 Bright
+		STMP D 0 Bright A_Chase
+		STMP D 1 Bright
+		STMP D 0 Bright A_Chase
+		STMP D 1 Bright
+		STMP D 0 Bright A_Chase
+		STMP D 1 Bright
+		STMP D 0 Bright A_Chase
+		STMP D 1 Bright
+		STMP D 0 Bright A_Chase
+		STMP D 1 Bright
+		STMP D 0 Bright A_Chase
+		STMP D 1 Bright
+		Loop
+	Pickup:
+		TNT1 A 1 A_GiveInventory("DragItem")
+		Stop
+	}
+}
+
+Actor DragItem : CustomInventory
+{
+	Inventory.PickupMessage "Drag!"
+	Inventory.Amount 1
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.UseSound "items/powerstim"
+	Inventory.Icon ARTISTIM
+	Renderstyle Add
+	Tag "Drag"
+	+INVENTORY.FANCYPICKUPSOUND
+	+INVBAR
+	states
+	{
+	Spawn:
+		STMP ABCD 1 Bright
+		loop
+	Use:
+		TNT1 A 1
+		TNT1 A 0 A_JumpIfInventory("DragTimer", 1, "Failed")
+		TNT1 A 0 A_JumpIfInventory("DragSideEffects", 1, "Failed")
+		TNT1 A 0 A_Print("You can hear dizziness and sound like an earthquake as a side effect.")
+//		TNT1 A 0 A_GiveInventory("DragBuddha", 1)
+		TNT1 A 0 ACS_NamedExecuteAlways("Drag_Buddha", 0)
+		TNT1 A 0 A_GiveInventory("DragQuadDamage", 1)
+		TNT1 A 0 A_GiveInventory("DragDoubleFiringSpeed", 1)
+		TNT1 A 0 A_GiveInventory("DragHighJump", 1)
+		TNT1 A 0 A_GiveInventory("DragQuadSpeed", 1)
+		TNT1 A 0 A_GiveInventory("DragTorch", 1)
+		TNT1 A 0 A_GiveInventory("DragTimer", 1)
+		Stop
+	Failed:
+		TNT1 A 1 A_Print("Not yet available.")
+		Fail
+	}
+}
+
+/*Actor DragBuddha : PowerBuddha
+{
+	Powerup.Duration -120
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	+NOTIMEFREEZE
+}*/
+
+Actor DragQuadDamage : PowerDamage
+{
+	DamagefActor 4.0
+	Powerup.Duration -120
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+Actor DragDoubleFiringSpeed : PowerDoubleFiringSpeed
+{
+	Powerup.Duration -120
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+Actor DragHighJump : PowerHighJump
+{
+	Powerup.Duration -120
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+Actor DragQuadSpeed : PowerSpeed
+{
+	Speed 4
+	Powerup.Duration -120
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+Actor DragTorch : PowerTorch
+{
+	Powerup.Duration -120
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	-INVENTORY.ADDITIVETIME
+	+NOTIMEFREEZE
+}
+
+Actor DragTimer : PowerTargeter
+{
+	Powerup.Duration -120
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	+NOTIMEFREEZE
+	States
+	{
+	Targeter:
+		TNT1 A 1
+		TNT1 A 1
+		TNT1 A 1
+		Loop
+	}
+}
+
+Actor DragSideEffects : PowerTargeter
+{
+	Powerup.Duration -60
+	-INVENTORY.HUBPOWER
+	-INVENTORY.PERSISTENTPOWER
+	+INVENTORY.UNDROPPABLE
+	+INVENTORY.QUIET
+	+NOTIMEFREEZE
+	States
+	{
+	Targeter:
+		TNT1 A 1
+		TNT1 A 0 A_Quake(9, 35, 0, 1)
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		TNT1 A 1
+		TNT1 A 0 A_SetAngle(frandom(-1.0, 1.0)+angle, SPF_INTERPOLATE)
+		TNT1 A 0 A_SetPitch(frandom(-1.0, 1.0)+pitch, SPF_INTERPOLATE)
+		Loop
+	}
+}

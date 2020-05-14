@@ -1,0 +1,162 @@
+// 03/05/2020
+
+#library "RUNEDROP"
+#include "zcommon.acs"
+
+bool Stop = False;
+
+Script "Map_Name" Open {
+	
+	Stop = True;
+	
+	Delay(35);
+	
+	Stop = False;
+
+}
+
+Script "Drop_Rune" KILL {
+	
+	if(GetCVar("mod_enable")) {
+		
+		if(CheckFlag(0, "ISMONSTER") == True) {
+			
+			Delay(35);
+			
+			Int randomizea = random(1, 10);
+			Int randomizeb = random(1, 6);
+			Int chancea = random(1, 100);
+			Int chanceb = GetCVar("drop_chance");
+			Int chancec = GetCVar("critical_multiple");
+			Int rarea = random(1, 100);
+			Int rareb = GetCVar("rare_chance");
+			
+			if(GetCVar("critical_hp") >= GetActorProperty(0, APROP_Health)) {
+				chanceb *= chancec;
+			}
+			
+			if(CheckFlag(0, "BOSS") == True) {
+				chanceb = GetCVar("boss_chance");
+			}
+
+			if(chanceb != 0) {
+				if(chanceb >= chancea) {
+					if(GetCVar("special_rune")) {
+						if(rareb != 0) {
+							
+							if(GetCVar("boss_rare")) {
+								rareb = 100;
+							}
+							
+							if(rareb >= rarea) {
+								switch(randomizeb) {
+									case 1:
+										SpawnForced("DemonCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+										break;
+									case 2:
+										SpawnForced("RavenCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+										break;
+									case 3:
+										SpawnForced("DevilCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+										break;
+									case 4:
+										SpawnForced("SatanCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+										break;
+									case 5:
+										SpawnForced("Omamori", GetActorX(0), GetActorY(0), GetActorZ(0));
+										break;
+									case 6:
+										SpawnForced("Drag", GetActorX(0), GetActorY(0), GetActorZ(0));
+										break;
+								}
+								
+							terminate;
+							
+							}
+						}
+					}
+					switch(randomizea) {
+						case 1:
+							SpawnForced("StrengthCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 2:
+							SpawnForced("RageCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 3:
+							SpawnForced("DrainCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 4:
+							SpawnForced("SpreadCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 5:
+							SpawnForced("ResistanceCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 6:
+							SpawnForced("RegenerationCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 7:
+							SpawnForced("ProsperityCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 8:
+							SpawnForced("ReflectionCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 9:
+							SpawnForced("HighJumpCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+						case 10:
+							SpawnForced("HasteCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
+							break;
+					}
+				}
+			}
+		}
+	}
+}
+
+Script "Omamori_Check" Enter {
+	if(CheckInventory("OmamoriCheck") >= 1) {
+		ACS_NamedExecuteAlways("Omamori_Script", 0);
+	}
+}
+
+Script "Omamori_Script" (void) {
+
+    SetPlayerProperty(0, 1, PROP_BUDDHA);
+	
+	while(GetActorProperty(0, APROP_HEALTH) > 1) {
+        Delay(1);
+		if(Stop) {
+			terminate;
+		}
+	}
+	
+	while(GetActorPowerupTics(0, "DragTimer") > 0) {
+		Delay(1);
+		if(Stop) {
+			terminate;
+		}
+	}
+	
+	Delay(1);
+	
+	GiveInventory("OmamoriPower", 1);
+	Playsound(0, "misc/teleport");
+	GiveInventory("Health", 100);
+	TakeInventory("OmamoriCheck", 1);
+    SetPlayerProperty(0, 0, PROP_BUDDHA);
+}
+
+Script "Drag_Buddha" (void) {
+
+	SetPlayerProperty(0, 1, PROP_BUDDHA);
+	
+	for(int i = 0; i < 4201; i++) {
+		if(Stop) {
+			terminate;
+		}
+	}
+	
+	GiveInventory("DragSideEffects", 1);
+	SetPlayerProperty(0, 0, PROP_BUDDHA);
+}
+
