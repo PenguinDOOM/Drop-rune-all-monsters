@@ -362,12 +362,14 @@ ACTOR StrengthCustomRune : CustomInventory
 		STRR ABCD 6
 		Loop
 	MReady:
+		STRR A 0 A_ClearTarget
 		STRR A 0 A_ChangeFlag("FLOAT",1)
 		STRR A 0 A_ChangeFlag("FLOATBOB",1)
 		STRR A 0 A_ChangeFlag("NOGRAVITY",1)
 		STRR ABCD 6 A_Look
-		Loop
+		Wait
 	See:
+		STRR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		STRR A 0 A_JumpIfTargetInlos(3)
 		STRR A 0 A_ClearTarget
 		STRR A 1
@@ -406,12 +408,14 @@ ACTOR RageCustomRune : CustomInventory
 		RAGR ABCDEFGH 6
 		Loop
 	MReady:
+		RAGR A 0 A_ClearTarget
 		RAGR A 0 A_ChangeFlag("FLOAT",1)
 		RAGR A 0 A_ChangeFlag("FLOATBOB",1)
 		RAGR A 0 A_ChangeFlag("NOGRAVITY",1)
 		RAGR ABCDEFGH 6 A_Look
-		Loop
+		Wait
 	See:
+		RAGR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		RAGR A 0 A_JumpIfTargetInlos(3)
 		RAGR A 0 A_ClearTarget
 		RAGR A 1
@@ -450,12 +454,14 @@ ACTOR DrainCustomRune : CustomInventory
 		DRAR ABCD 6
 		Loop
 	MReady:
+		DRAR A 0 A_ClearTarget
 		DRAR A 0 A_ChangeFlag("FLOAT",1)
 		DRAR A 0 A_ChangeFlag("FLOATBOB",1)
 		DRAR A 0 A_ChangeFlag("NOGRAVITY",1)
 		DRAR ABCD 6 A_Look
-		Loop
+		Wait
 	See:
+		DRAR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		DRAR A 0 A_JumpIfTargetInlos(3)
 		DRAR A 0 A_ClearTarget
 		DRAR A 1
@@ -494,12 +500,14 @@ ACTOR SpreadCustomRune : CustomInventory
 		SPRR ABCD 6
 		Loop
 	MReady:
+		SPRR A 0 A_ClearTarget
 		SPRR A 0 A_ChangeFlag("FLOAT",1)
 		SPRR A 0 A_ChangeFlag("FLOATBOB",1)
 		SPRR A 0 A_ChangeFlag("NOGRAVITY",1)
 		SPRR ABCD 6 A_Look
-		Loop
+		Wait
 	See:
+		SPRR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		SPRR A 0 A_JumpIfTargetInlos(3)
 		SPRR A 0 A_ClearTarget
 		SPRR A 1
@@ -538,12 +546,14 @@ ACTOR ResistanceCustomRune : CustomInventory
 		RESR ABCDEFGH 6
 		Loop
 	MReady:
+		RESR A 0 A_ClearTarget
 		RESR A 0 A_ChangeFlag("FLOAT",1)
 		RESR A 0 A_ChangeFlag("FLOATBOB",1)
 		RESR A 0 A_ChangeFlag("NOGRAVITY",1)
 		RESR ABCDEFGH 6 A_Look
-		Loop
+		Wait
 	See:
+		RESR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		RESR A 0 A_JumpIfTargetInlos(3)
 		RESR A 0 A_ClearTarget
 		RESR A 1
@@ -582,12 +592,14 @@ ACTOR RegenerationCustomRune : CustomInventory
 		REGR AB 6
 		Loop
 	MReady:
+		REGR A 0 A_ClearTarget
 		REGR A 0 A_ChangeFlag("FLOAT",1)
 		REGR A 0 A_ChangeFlag("FLOATBOB",1)
 		REGR A 0 A_ChangeFlag("NOGRAVITY",1)
 		REGR AB 6 A_Look
-		Loop
+		Wait
 	See:
+		REGR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		REGR A 0 A_JumpIfTargetInlos(3)
 		REGR A 0 A_ClearTarget
 		REGR A 1
@@ -626,12 +638,14 @@ ACTOR ProsperityCustomRune : CustomInventory
 		PRSR ABCD 6
 		Loop
 	MReady:
+		PRSR A 0 A_ClearTarget
 		PRSR A 0 A_ChangeFlag("FLOAT",1)
 		PRSR A 0 A_ChangeFlag("FLOATBOB",1)
 		PRSR A 0 A_ChangeFlag("NOGRAVITY",1)
 		PRSR ABCD 6 A_Look
-		Loop
+		Wait
 	See:
+		PASR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		PASR A 0 A_JumpIfTargetInlos(3)
 		PASR A 0 A_ClearTarget
 		PASR A 1
@@ -670,12 +684,14 @@ ACTOR ReflectionCustomRune : CustomInventory
 		REFR AB 6
 		Loop
 	MReady:
+		REFR A 0 A_ClearTarget
 		REFR A 0 A_ChangeFlag("FLOAT",1)
 		REFR A 0 A_ChangeFlag("FLOATBOB",1)
 		REFR A 0 A_ChangeFlag("NOGRAVITY",1)
 		REFR AB 6 A_Look
-		Loop
+		Wait
 	See:
+		REFR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		REFR A 0 A_JumpIfTargetInlos(3)
 		REFR A 0 A_ClearTarget
 		REFR A 1
@@ -714,12 +730,14 @@ ACTOR HighJumpCustomRune : CustomInventory
 		HIJR ABCD 6
 		Loop
 	MReady:
+		HIJR A 0 A_ClearTarget
 		HIJR A 0 A_ChangeFlag("FLOAT",1)
 		HIJR A 0 A_ChangeFlag("FLOATBOB",1)
 		HIJR A 0 A_ChangeFlag("NOGRAVITY",1)
 		HIJR ABCD 6 A_Look
-		Loop
+		Wait
 	See:
+		HIJR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		HIJR A 0 A_JumpIfTargetInlos(3)
 		HIJR A 0 A_ClearTarget
 		HIJR A 1
@@ -758,12 +776,14 @@ ACTOR HasteCustomRune : CustomInventory
 		HASR ABCD 6
 		Loop
 	MReady:
+		HASR A 0 A_ClearTarget
 		HASR A 0 A_ChangeFlag("FLOAT",1)
 		HASR A 0 A_ChangeFlag("FLOATBOB",1)
 		HASR A 0 A_ChangeFlag("NOGRAVITY",1)
 		HASR ABCD 6 A_Look
-		Loop
+		Wait
 	See:
+		HASR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		HASR A 0 A_JumpIfTargetInlos(3)
 		HASR A 0 A_ClearTarget
 		HASR A 1
@@ -802,12 +822,14 @@ ACTOR DemonCustomRune : CustomInventory
 		LCHS ABCD 3 Bright
 		Loop
 	MReady:
+		LCHS A 0 A_ClearTarget
 		LCHS A 0 Bright A_ChangeFlag("FLOAT",1)
 		LCHS A 0 Bright A_ChangeFlag("FLOATBOB",1)
 		LCHS A 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		LCHS ABCD 6 Bright A_Look
-		Loop
+		Wait
 	See:
+		LCHS A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		LCHS A 0 A_JumpIfTargetInlos(3)
 		LCHS A 0 A_ClearTarget
 		LCHS A 1 Bright
@@ -847,12 +869,14 @@ ACTOR RavenCustomRune : CustomInventory
 		ICRV BCDC 6 Bright
 		Loop
 	MReady:
+		ICRV A 0 A_ClearTarget
 		ICRV B 0 Bright A_ChangeFlag("FLOAT",1)
 		ICRV B 0 Bright A_ChangeFlag("FLOATBOB",1)
 		ICRV B 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		ICRV BCDC 6 Bright A_Look
-		Loop
+		Wait
 	See:
+		ICRV A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		ICRV A 0 A_JumpIfTargetInlos(3)
 		ICRV A 0 A_ClearTarget
 		ICRV A 1 Bright
@@ -891,12 +915,14 @@ ACTOR DevilCustomRune : CustomInventory
 		DEVI ABCD 6 Bright
 		Loop
 	MReady:
+		DEVI A 0 A_ClearTarget
 		DEVI A 0 Bright A_ChangeFlag("FLOAT",1)
 		DEVI A 0 Bright A_ChangeFlag("FLOATBOB",1)
 		DEVI A 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		DEVI ABCD 6 Bright A_Look
-		Loop
+		Wait
 	See:
+		DEVI A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		DEVI A 0 A_JumpIfTargetInlos(3)
 		DEVI A 0 A_ClearTarget
 		DEVI A 1 Bright
@@ -935,12 +961,14 @@ ACTOR SatanCustomRune : CustomInventory
 		SATA ABCD 6
 		Loop
 	MReady:
+		SATA A 0 A_ClearTarget
 		SATA A 0 Bright A_ChangeFlag("FLOAT",1)
 		SATA A 0 Bright A_ChangeFlag("FLOATBOB",1)
 		SATA A 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		SATA ABCD 6 Bright A_Look
-		Loop
+		Wait
 	See:
+		SATA A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		SATA A 0 A_JumpIfTargetInlos(3)
 		SATA A 0 A_ClearTarget
 		SATA A 1 Bright
@@ -1255,11 +1283,13 @@ Actor Omamori : CustomInventory
 		BDAM A 1 Bright
 		Loop
 	MReady:
+		BDAM A 0 A_ClearTarget
 		BDAM A 0 Bright A_ChangeFlag("FLOAT",1)
 		BDAM A 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		BDAM A 1 Bright A_Look
-		Loop
+		Wait
 	See:
+		BDAM A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		BDAM A 0 Bright A_JumpIfTargetInlos(3)
 		BDAM A 0 Bright A_ClearTarget
 		BDAM A 1 Bright
@@ -1288,17 +1318,15 @@ Actor OmamoriItem : CustomInventory
 	Spawn:
 		BDAM A -1 Bright
 		Stop
+	Failed:
+		TNT1 A 1 A_Print("Already in use")
+		Fail
 	Use:
-		TNT1 A 1
-		TNT1 A 1 A_JumpIfInventory("OmamoriCheck", 1, "Failed")
-		TNT1 A 1
+		TNT1 A 0 A_JumpIfInventory("OmamoriCheck", 1, "Failed")
 		TNT1 A 0 A_GiveInventory("OmamoriCheck")
 		TNT1 A 0 A_Print("Increased your life by one!")
 		TNT1 A 0 ACS_NamedExecute("Omamori_Script",0)
 		Stop
-	Failed:
-		TNT1 A 1 A_Print("Already in use")
-		Fail
 	}
 }
 
@@ -1344,12 +1372,14 @@ Actor Drag : CustomInventory
 		STMP ABCD 6 Bright
 		Loop
 	MReady:
+		STMP A 0 A_ClearTarget
 		STMP A 0 Bright A_ChangeFlag("FLOAT",1)
 		STMP A 0 Bright A_ChangeFlag("FLOATBOB",1)
 		STMP A 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		STMP ABCD 6 Bright A_Look
-		Loop
+		Wait
 	See:
+		STMP A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
 		STMP A 0 Bright A_JumpIfTargetInlos(3)
 		STMP A 0 Bright A_ClearTarget
 		STMP A 1 Bright 
@@ -1427,10 +1457,11 @@ Actor DragItem : CustomInventory
 	Spawn:
 		STMP ABCD 1 Bright
 		loop
+	Failed:
+		TNT1 A 1 A_Print("Not yet available.")
+		Fail
 	Use:
-		TNT1 A 1
-		TNT1 A 1 A_JumpIfInventory("DragTimer", 1, "Failed")
-		TNT1 A 1
+		TNT1 A 0 A_JumpIfInventory("DragTimer", 1, "Failed")
 		TNT1 A 0 A_JumpIfInventory("DragSideEffects", 1, "Failed")
 		TNT1 A 0 A_Print("You can hear dizziness and sound like an earthquake as a side effect.")
 //		TNT1 A 0 A_GiveInventory("DragBuddha", 1)
@@ -1442,9 +1473,6 @@ Actor DragItem : CustomInventory
 		TNT1 A 0 A_GiveInventory("DragTorch", 1)
 		TNT1 A 0 A_GiveInventory("DragTimer", 1)
 		Stop
-	Failed:
-		TNT1 A 1 A_Print("Not yet available.")
-		Fail
 	}
 }
 
