@@ -369,7 +369,7 @@ ACTOR StrengthCustomRune : CustomInventory
 		STRR ABCD 6 A_Look
 		Wait
 	See:
-		STRR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		STRR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		STRR A 0 A_JumpIfTargetInlos(3)
 		STRR A 0 A_ClearTarget
 		STRR A 1
@@ -415,7 +415,7 @@ ACTOR RageCustomRune : CustomInventory
 		RAGR ABCDEFGH 6 A_Look
 		Wait
 	See:
-		RAGR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		RAGR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		RAGR A 0 A_JumpIfTargetInlos(3)
 		RAGR A 0 A_ClearTarget
 		RAGR A 1
@@ -461,7 +461,7 @@ ACTOR DrainCustomRune : CustomInventory
 		DRAR ABCD 6 A_Look
 		Wait
 	See:
-		DRAR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		DRAR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		DRAR A 0 A_JumpIfTargetInlos(3)
 		DRAR A 0 A_ClearTarget
 		DRAR A 1
@@ -507,7 +507,7 @@ ACTOR SpreadCustomRune : CustomInventory
 		SPRR ABCD 6 A_Look
 		Wait
 	See:
-		SPRR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		SPRR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		SPRR A 0 A_JumpIfTargetInlos(3)
 		SPRR A 0 A_ClearTarget
 		SPRR A 1
@@ -553,7 +553,7 @@ ACTOR ResistanceCustomRune : CustomInventory
 		RESR ABCDEFGH 6 A_Look
 		Wait
 	See:
-		RESR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		RESR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		RESR A 0 A_JumpIfTargetInlos(3)
 		RESR A 0 A_ClearTarget
 		RESR A 1
@@ -599,7 +599,7 @@ ACTOR RegenerationCustomRune : CustomInventory
 		REGR AB 6 A_Look
 		Wait
 	See:
-		REGR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		REGR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		REGR A 0 A_JumpIfTargetInlos(3)
 		REGR A 0 A_ClearTarget
 		REGR A 1
@@ -645,7 +645,7 @@ ACTOR ProsperityCustomRune : CustomInventory
 		PRSR ABCD 6 A_Look
 		Wait
 	See:
-		PASR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		PASR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		PASR A 0 A_JumpIfTargetInlos(3)
 		PASR A 0 A_ClearTarget
 		PASR A 1
@@ -691,7 +691,7 @@ ACTOR ReflectionCustomRune : CustomInventory
 		REFR AB 6 A_Look
 		Wait
 	See:
-		REFR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		REFR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		REFR A 0 A_JumpIfTargetInlos(3)
 		REFR A 0 A_ClearTarget
 		REFR A 1
@@ -737,7 +737,7 @@ ACTOR HighJumpCustomRune : CustomInventory
 		HIJR ABCD 6 A_Look
 		Wait
 	See:
-		HIJR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		HIJR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		HIJR A 0 A_JumpIfTargetInlos(3)
 		HIJR A 0 A_ClearTarget
 		HIJR A 1
@@ -783,7 +783,7 @@ ACTOR HasteCustomRune : CustomInventory
 		HASR ABCD 6 A_Look
 		Wait
 	See:
-		HASR A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		HASR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		HASR A 0 A_JumpIfTargetInlos(3)
 		HASR A 0 A_ClearTarget
 		HASR A 1
@@ -829,7 +829,7 @@ ACTOR DemonCustomRune : CustomInventory
 		LCHS ABCD 6 Bright A_Look
 		Wait
 	See:
-		LCHS A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		LCHS A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		LCHS A 0 A_JumpIfTargetInlos(3)
 		LCHS A 0 A_ClearTarget
 		LCHS A 1 Bright
@@ -876,7 +876,7 @@ ACTOR RavenCustomRune : CustomInventory
 		ICRV BCDC 6 Bright A_Look
 		Wait
 	See:
-		ICRV A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		ICRV A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		ICRV A 0 A_JumpIfTargetInlos(3)
 		ICRV A 0 A_ClearTarget
 		ICRV A 1 Bright
@@ -922,7 +922,7 @@ ACTOR DevilCustomRune : CustomInventory
 		DEVI ABCD 6 Bright A_Look
 		Wait
 	See:
-		DEVI A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		DEVI A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		DEVI A 0 A_JumpIfTargetInlos(3)
 		DEVI A 0 A_ClearTarget
 		DEVI A 1 Bright
@@ -968,7 +968,7 @@ ACTOR SatanCustomRune : CustomInventory
 		SATA ABCD 6 Bright A_Look
 		Wait
 	See:
-		SATA A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		SATA A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		SATA A 0 A_JumpIfTargetInlos(3)
 		SATA A 0 A_ClearTarget
 		SATA A 1 Bright
@@ -1289,7 +1289,7 @@ Actor Omamori : CustomInventory
 		BDAM A 1 Bright A_Look
 		Wait
 	See:
-		BDAM A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		BDAM A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		BDAM A 0 Bright A_JumpIfTargetInlos(3)
 		BDAM A 0 Bright A_ClearTarget
 		BDAM A 1 Bright
@@ -1379,7 +1379,7 @@ Actor Drag : CustomInventory
 		STMP ABCD 6 Bright A_Look
 		Wait
 	See:
-		STMP A 0 A_CheckFlag("Monster", "MReady", AAPTR_TARGET)
+		STMP A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		STMP A 0 Bright A_JumpIfTargetInlos(3)
 		STMP A 0 Bright A_ClearTarget
 		STMP A 1 Bright 
