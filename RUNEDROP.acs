@@ -5,24 +5,18 @@
 
 bool Stop = False;
 
-Script "Map_Name" Open {
-	
+Script "Map_Name" Open
+{
 	Stop = True;
-	
 	Delay(35);
-	
 	Stop = False;
-
 }
 
-Script "Drop_Rune" KILL {
-	
+Script "Drop_Rune" KILL
+{
 	if(GetCVar("mod_enable")) {
-		
 		if(CheckFlag(0, "ISMONSTER") == True) {
-			
 			Delay(35);
-			
 			Int randomizea = random(1, 10);
 			Int randomizeb = random(1, 6);
 			Int chancea = random(1, 100);
@@ -30,24 +24,16 @@ Script "Drop_Rune" KILL {
 			Int chancec = GetCVar("critical_multiple");
 			Int rarea = random(1, 100);
 			Int rareb = GetCVar("rare_chance");
-			
-			if(GetCVar("critical_hp") >= GetActorProperty(0, APROP_Health)) {
+			if(GetCVar("critical_hp") >= GetActorProperty(0, APROP_Health))
 				chanceb *= chancec;
-			}
-			
-			if(CheckFlag(0, "BOSS") == True) {
+			if(CheckFlag(0, "BOSS") == True)
 				chanceb = GetCVar("boss_chance");
-			}
-
 			if(chanceb != 0) {
 				if(chanceb >= chancea) {
-					if(GetCVar("special_rune")) {
+					if(GetCVar("special_rune") && !GetCVar("original_behavior")) {
 						if(rareb != 0) {
-							
-							if(GetCVar("boss_rare")) {
+							if(GetCVar("boss_rare"))
 								rareb = 100;
-							}
-							
 							if(rareb >= rarea) {
 								switch(randomizeb) {
 									case 1:
@@ -69,9 +55,7 @@ Script "Drop_Rune" KILL {
 										SpawnForced("Drag", GetActorX(0), GetActorY(0), GetActorZ(0));
 										break;
 								}
-								
 							terminate;
-							
 							}
 						}
 					}
@@ -113,32 +97,26 @@ Script "Drop_Rune" KILL {
 	}
 }
 
-Script "Omamori_Check" Enter {
-	if(CheckInventory("OmamoriCheck") >= 1) {
+Script "Omamori_Check" Enter
+{
+	if(CheckInventory("OmamoriCheck") >= 1)
 		ACS_NamedExecuteAlways("Omamori_Script", 0);
-	}
 }
 
-Script "Omamori_Script" (void) {
-
+Script "Omamori_Script" (void)
+{
     SetPlayerProperty(0, 1, PROP_BUDDHA);
-	
 	while(GetActorProperty(0, APROP_HEALTH) > 1) {
         Delay(1);
-		if(Stop) {
+		if(Stop)
 			terminate;
-		}
 	}
-	
 	while(GetActorPowerupTics(0, "DragTimer") > 0) {
 		Delay(1);
-		if(Stop) {
+		if(Stop)
 			terminate;
-		}
 	}
-	
 	Delay(1);
-	
 	GiveInventory("OmamoriPower", 1);
 	Playsound(0, "misc/teleport");
 	GiveInventory("Health", 100);
@@ -146,16 +124,13 @@ Script "Omamori_Script" (void) {
     SetPlayerProperty(0, 0, PROP_BUDDHA);
 }
 
-Script "Drag_Buddha" (void) {
-
+Script "Drag_Buddha" (void)
+{
 	SetPlayerProperty(0, 1, PROP_BUDDHA);
-	
 	for(int i = 0; i < 4201; i++) {
-		if(Stop) {
+		if(Stop)
 			terminate;
-		}
 	}
-	
 	GiveInventory("DragSideEffects", 1);
 	SetPlayerProperty(0, 0, PROP_BUDDHA);
 }
