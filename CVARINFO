@@ -5,4 +5,6 @@ server int critical_multiple = 2;//1~+ | Critical kill drop multiplier
 server int rare_chance = 1;//0~100　| Special rune drop rate
 server bool boss_rare = false;// True, the boss must drop the special rune
 server bool mod_enable = true;// Mod enable / disable switch
+server bool original_behavior = false// Original behavior enable / disable switch
+server bool rune_follow = true;// Rune follow system enable / disable switch
 server bool special_rune = true;// Special rune enable / disable switch
