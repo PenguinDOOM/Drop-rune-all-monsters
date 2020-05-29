@@ -1,7 +1,7 @@
-// 03/05/2020
+// 29/05/2020
 
 #library "RUNEDROP"
-#include "zcommon.acs"
+#include "zcommon.h.bcs"
 
 bool Stop = False;
 
@@ -18,7 +18,7 @@ Script "Drop_Rune" KILL
 		if(CheckFlag(0, "ISMONSTER") == True) {
 			Delay(35);
 			Int randomizea = random(1, 10);
-			Int randomizeb = random(1, 6);
+			Int randomizeb = random(1, 4);
 			Int chancea = random(1, 100);
 			Int chanceb = GetCVar("drop_chance");
 			Int chancec = GetCVar("critical_multiple");
@@ -48,12 +48,12 @@ Script "Drop_Rune" KILL
 									case 4:
 										SpawnForced("SatanCustomRune", GetActorX(0), GetActorY(0), GetActorZ(0));
 										break;
-									case 5:
+									/*case 5:
 										SpawnForced("Omamori", GetActorX(0), GetActorY(0), GetActorZ(0));
 										break;
 									case 6:
 										SpawnForced("Drag", GetActorX(0), GetActorY(0), GetActorZ(0));
-										break;
+										break;*/
 								}
 							terminate;
 							}
@@ -97,7 +97,15 @@ Script "Drop_Rune" KILL
 	}
 }
 
-Script "Omamori_Check" Enter
+Script "Check_CVar" (int i)
+{
+	if(i == 0)
+		SetResultValue(GetCVar("rune_follow"));
+	else
+		SetResultValue(GetCVar("original_behavior"));
+}
+
+/*Script "Omamori_Check" Enter
 {
 	if(CheckInventory("OmamoriCheck") >= 1)
 		ACS_NamedExecuteAlways("Omamori_Script", 0);
@@ -133,5 +141,5 @@ Script "Drag_Buddha" (void)
 	}
 	GiveInventory("DragSideEffects", 1);
 	SetPlayerProperty(0, 0, PROP_BUDDHA);
-}
+}*/
 
