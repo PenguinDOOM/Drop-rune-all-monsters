@@ -352,6 +352,7 @@ ACTOR StrengthCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon STRRA
 	Inventory.PickupMessage "$PICKUP_STRENGTH"
 	var int user_time;
@@ -399,6 +400,7 @@ ACTOR RageCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon RAGRA
 	Inventory.PickupMessage "$PICKUP_RAGE"
 	var int user_time;
@@ -446,6 +448,7 @@ ACTOR DrainCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon DRARA
 	Inventory.PickupMessage "$PICKUP_DRAIN"
 	var int user_time;
@@ -493,6 +496,7 @@ ACTOR SpreadCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon SPRRA
 	Inventory.PickupMessage "$PICKUP_SPREAD"
 	var int user_time;
@@ -540,6 +544,7 @@ ACTOR ResistanceCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon RESRA
 	Inventory.PickupMessage "$PICKUP_RESISTANCE"
 	var int user_time;
@@ -587,6 +592,7 @@ ACTOR RegenerationCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon REGRA
 	Inventory.PickupMessage "$PICKUP_REGENERATION"
 	var int user_time;
@@ -634,6 +640,7 @@ ACTOR ProsperityCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon PRSRA
 	Inventory.PickupMessage "$PICKUP_PROSPERITY"
 	var int user_time;
@@ -681,6 +688,7 @@ ACTOR ReflectionCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon REFRA
 	Inventory.PickupMessage "$PICKUP_REFLECTION"
 	var int user_time;
@@ -728,6 +736,7 @@ ACTOR HighJumpCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon HIJRA
 	Inventory.PickupMessage "$PICKUP_HIGHJUMP"
 	var int user_time;
@@ -775,6 +784,7 @@ ACTOR HasteCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon HASRA
 	Inventory.PickupMessage "$PICKUP_HASTE"
 	var int user_time;
@@ -822,6 +832,7 @@ ACTOR DemonCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon ARTILSKL
 	Inventory.PickupMessage "DemonRune"
 	var int user_time;
@@ -869,6 +880,7 @@ ACTOR RavenCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Scale 0.6
 	Inventory.Icon ICRVA0
 	Inventory.PickupMessage "RavenRune"
@@ -917,6 +929,7 @@ ACTOR DevilCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon DEVIL
 	Inventory.PickupMessage "DevilRune"
 	var int user_time;
@@ -964,6 +977,7 @@ ACTOR SatanCustomRune : CustomInventory
 	+NODAMAGE
 	+QUICKTORETALIATE
 	-SHOOTABLE
+	+SEEINVISIBLE
 	Inventory.Icon SATAN
 	Inventory.PickupMessage "SatanRune"
 	var int user_time;
