@@ -24,8 +24,24 @@ Script "Drop_Rune" KILL
 			Int chancec = GetCVar("critical_multiple");
 			Int rarea = random(1, 100);
 			Int rareb = GetCVar("rare_chance");
-			if(GetCVar("critical_hp") >= GetActorProperty(0, APROP_Health))
-				chanceb *= chancec;
+			switch(GetCVar("critical_method")) {
+				case 0:
+					if(GetCVar("critical_hp") >= GetActorProperty(0, APROP_Health))
+						chanceb *= chancec;
+					break;
+				case 1: // It sucks not being able to get gib health in acs.
+					int CriticalHealth1 = GetActorProperty(0, APROP_SpawnHealth) / 2;
+					if(CriticalHealth1 >= GetActorProperty(0, APROP_Health))
+					chanceb *= chancec;
+					break;
+				case 2:
+					int CriticalHealth2 = GetActorProperty(0, APROP_SpawnHealth) / 10;
+					if(CriticalHealth2 >= GetActorProperty(0, APROP_Health))
+					chanceb *= chancec;
+					break;
+				default:
+					break;
+			}
 			if(CheckFlag(0, "BOSS") == True)
 				chanceb = GetCVar("boss_chance");
 			if(chanceb != 0) {

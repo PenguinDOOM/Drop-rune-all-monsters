@@ -1,6 +1,7 @@
 server int boss_chance = 100;//0~100 | Probability that boss will drop rune
 server int drop_chance = 1;//0~100 | Probability of dropping a rune
 server int critical_hp = -50;//0~- | Critical kill damage
+server int critical_method = 1;// 0, 1, 2
 server int critical_multiple = 2;//1~+ | Critical kill drop multiplier
 server int rare_chance = 1;//0~100　| Special rune drop rate
 server bool boss_rare = false;// True, the boss must drop the special rune
