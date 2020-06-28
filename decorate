@@ -371,7 +371,7 @@ ACTOR StrengthCustomRune : CustomInventory
 		STRR A 0 A_ChangeFlag("FLOATBOB",1)
 		STRR A 0 A_ChangeFlag("NOGRAVITY",1)
 		STRR ABCD 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		STRR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		STRR A 0 A_JumpIfTargetInlos(3)
@@ -419,7 +419,7 @@ ACTOR RageCustomRune : CustomInventory
 		RAGR A 0 A_ChangeFlag("FLOATBOB",1)
 		RAGR A 0 A_ChangeFlag("NOGRAVITY",1)
 		RAGR ABCDEFGH 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		RAGR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		RAGR A 0 A_JumpIfTargetInlos(3)
@@ -467,7 +467,7 @@ ACTOR DrainCustomRune : CustomInventory
 		DRAR A 0 A_ChangeFlag("FLOATBOB",1)
 		DRAR A 0 A_ChangeFlag("NOGRAVITY",1)
 		DRAR ABCD 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		DRAR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		DRAR A 0 A_JumpIfTargetInlos(3)
@@ -515,7 +515,7 @@ ACTOR SpreadCustomRune : CustomInventory
 		SPRR A 0 A_ChangeFlag("FLOATBOB",1)
 		SPRR A 0 A_ChangeFlag("NOGRAVITY",1)
 		SPRR ABCD 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		SPRR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		SPRR A 0 A_JumpIfTargetInlos(3)
@@ -563,7 +563,7 @@ ACTOR ResistanceCustomRune : CustomInventory
 		RESR A 0 A_ChangeFlag("FLOATBOB",1)
 		RESR A 0 A_ChangeFlag("NOGRAVITY",1)
 		RESR ABCDEFGH 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		RESR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		RESR A 0 A_JumpIfTargetInlos(3)
@@ -611,7 +611,7 @@ ACTOR RegenerationCustomRune : CustomInventory
 		REGR A 0 A_ChangeFlag("FLOATBOB",1)
 		REGR A 0 A_ChangeFlag("NOGRAVITY",1)
 		REGR AB 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		REGR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		REGR A 0 A_JumpIfTargetInlos(3)
@@ -659,7 +659,7 @@ ACTOR ProsperityCustomRune : CustomInventory
 		PRSR A 0 A_ChangeFlag("FLOATBOB",1)
 		PRSR A 0 A_ChangeFlag("NOGRAVITY",1)
 		PRSR ABCD 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		PASR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		PASR A 0 A_JumpIfTargetInlos(3)
@@ -707,7 +707,7 @@ ACTOR ReflectionCustomRune : CustomInventory
 		REFR A 0 A_ChangeFlag("FLOATBOB",1)
 		REFR A 0 A_ChangeFlag("NOGRAVITY",1)
 		REFR AB 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		REFR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		REFR A 0 A_JumpIfTargetInlos(3)
@@ -755,7 +755,7 @@ ACTOR HighJumpCustomRune : CustomInventory
 		HIJR A 0 A_ChangeFlag("FLOATBOB",1)
 		HIJR A 0 A_ChangeFlag("NOGRAVITY",1)
 		HIJR ABCD 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		HIJR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		HIJR A 0 A_JumpIfTargetInlos(3)
@@ -803,7 +803,7 @@ ACTOR HasteCustomRune : CustomInventory
 		HASR A 0 A_ChangeFlag("FLOATBOB",1)
 		HASR A 0 A_ChangeFlag("NOGRAVITY",1)
 		HASR ABCD 6 A_Look
-		Wait
+		Goto MReady+4
 	See:
 		HASR A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		HASR A 0 A_JumpIfTargetInlos(3)
@@ -851,7 +851,7 @@ ACTOR DemonCustomRune : CustomInventory
 		LCHS A 0 Bright A_ChangeFlag("FLOATBOB",1)
 		LCHS A 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		LCHS ABCD 6 Bright A_Look
-		Wait
+		Goto MReady+4
 	See:
 		LCHS A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		LCHS A 0 A_JumpIfTargetInlos(3)
@@ -900,7 +900,7 @@ ACTOR RavenCustomRune : CustomInventory
 		ICRV B 0 Bright A_ChangeFlag("FLOATBOB",1)
 		ICRV B 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		ICRV BCDC 6 Bright A_Look
-		Wait
+		Goto MReady+4
 	See:
 		ICRV A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		ICRV A 0 A_JumpIfTargetInlos(3)
@@ -948,7 +948,7 @@ ACTOR DevilCustomRune : CustomInventory
 		DEVI A 0 Bright A_ChangeFlag("FLOATBOB",1)
 		DEVI A 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		DEVI ABCD 6 Bright A_Look
-		Wait
+		Goto MReady+4
 	See:
 		DEVI A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		DEVI A 0 A_JumpIfTargetInlos(3)
@@ -996,7 +996,7 @@ ACTOR SatanCustomRune : CustomInventory
 		SATA A 0 Bright A_ChangeFlag("FLOATBOB",1)
 		SATA A 0 Bright A_ChangeFlag("NOGRAVITY",1)
 		SATA ABCD 6 Bright A_Look
-		Wait
+		Goto MReady+4
 	See:
 		SATA A 0 A_CheckFlag("ISMONSTER", "MReady", AAPTR_TARGET)
 		SATA A 0 A_JumpIfTargetInlos(3)
