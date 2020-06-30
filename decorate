@@ -1,6 +1,6 @@
 #include "Rune.dec"
 
-ACTOR CustomDoubleDamage : PowerDamage
+Actor CustomDoubleDamage : PowerDamage
 {
 	Damagefactor 2.0
 	Powerup.Duration 0x7FFFFFFD
@@ -12,7 +12,7 @@ ACTOR CustomDoubleDamage : PowerDamage
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomDoubleFiringSpeed : PowerDoubleFiringSpeed
+Actor CustomDoubleFiringSpeed : PowerDoubleFiringSpeed
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -23,7 +23,7 @@ ACTOR CustomDoubleFiringSpeed : PowerDoubleFiringSpeed
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomDrain : PowerDrain
+Actor CustomDrain : PowerDrain
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -34,7 +34,7 @@ ACTOR CustomDrain : PowerDrain
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomSpread : PowerSpread
+Actor CustomSpread : PowerSpread
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -45,7 +45,7 @@ ACTOR CustomSpread : PowerSpread
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomHalfDamage : PowerProtection
+Actor CustomHalfDamage : PowerProtection
 {
 	Damagefactor 0.5
 	Powerup.Duration 0x7FFFFFFD
@@ -57,7 +57,7 @@ ACTOR CustomHalfDamage : PowerProtection
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomRegeneration : PowerRegeneration
+Actor CustomRegeneration : PowerRegeneration
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -68,7 +68,7 @@ ACTOR CustomRegeneration : PowerRegeneration
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomProsperity : PowerProsperity
+Actor CustomProsperity : PowerProsperity
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -79,7 +79,7 @@ ACTOR CustomProsperity : PowerProsperity
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomReflection : PowerReflection
+Actor CustomReflection : PowerReflection
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -90,7 +90,7 @@ ACTOR CustomReflection : PowerReflection
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomHighJump : PowerHighJump
+Actor CustomHighJump : PowerHighJump
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -101,7 +101,7 @@ ACTOR CustomHighJump : PowerHighJump
 	+NOTIMEFREEZE
 }
 
-ACTOR CustomSpeed25 : PowerSpeed
+Actor CustomSpeed25 : PowerSpeed
 {
 	Speed 1.5
 	Powerup.Duration 0x7FFFFFFD
@@ -113,7 +113,7 @@ ACTOR CustomSpeed25 : PowerSpeed
 	+NOTIMEFREEZE
 }
 
-/*ACTOR DemonFrightener : PowerFrightener
+/*Actor DemonFrightener : PowerFrightener
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -124,7 +124,7 @@ ACTOR CustomSpeed25 : PowerSpeed
 	+NOTIMEFREEZE
 */
 
-ACTOR DemonPower : PowerDamage
+Actor DemonPower : PowerDamage
 {
 	Damagefactor 1.25
 	Powerup.Duration 0x7FFFFFFD
@@ -136,7 +136,7 @@ ACTOR DemonPower : PowerDamage
 	+NOTIMEFREEZE
 }
 
-ACTOR DemonDrain : PowerDrain
+Actor DemonDrain : PowerDrain
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -147,15 +147,15 @@ ACTOR DemonDrain : PowerDrain
 	+NOTIMEFREEZE
 }
 
-ACTOR DemonIronFeet : PowerIronFeet
+Actor DemonIronFeet : PowerIronFeet
 {
 	Powerup.Duration 0x7FFFFFFD
 	Powerup.Color "FF FF FF", 0.01
-	DamageFactor "Slime", 0.0
-	DamageFactor "Lava", 0.0
-	DamageFactor "Poison", 0.0
-	DamageFactor "Acid", 0.0
-	DamageFactor "Virus", 0.0
+	Damagefactor "Slime", 0.0
+	Damagefactor "Lava", 0.0
+	Damagefactor "Poison", 0.0
+	Damagefactor "Acid", 0.0
+	Damagefactor "Virus", 0.0
 	+INVENTORY.HUBPOWER
 	+INVENTORY.PERSISTENTPOWER
 	+INVENTORY.UNDROPPABLE
@@ -164,7 +164,7 @@ ACTOR DemonIronFeet : PowerIronFeet
 	+NOTIMEFREEZE
 }
 
-ACTOR RavenFlight : PowerHighJump
+Actor RavenFlight : PowerHighJump
 {
 	Powerup.Strength 80
 	Powerup.Duration 0x7FFFFFFD
@@ -176,7 +176,7 @@ ACTOR RavenFlight : PowerHighJump
 	+NOTIMEFREEZE
 }
 
-ACTOR RavenGhost : PowerGhost
+Actor RavenGhost : PowerGhost
 {
 	Powerup.Strength 99
 	Powerup.Duration 0x7FFFFFFD
@@ -188,15 +188,15 @@ ACTOR RavenGhost : PowerGhost
 	+NOTIMEFREEZE
 }
 
-ACTOR DevilIronFeet : PowerIronFeet
+Actor DevilIronFeet : PowerIronFeet
 {
 	Powerup.Duration 0x7FFFFFFD
 	Powerup.Color "FF FF FF", 0.01
-	DamageFactor "Slime", 0.0
-	DamageFactor "Lava", 0.0
-	DamageFactor "Poison", 0.0
-	DamageFactor "Acid", 0.0
-	DamageFactor "Virus", 0.0
+	Damagefactor "Slime", 0.0
+	Damagefactor "Lava", 0.0
+	Damagefactor "Poison", 0.0
+	Damagefactor "Acid", 0.0
+	Damagefactor "Virus", 0.0
 	+INVENTORY.HUBPOWER
 	+INVENTORY.PERSISTENTPOWER
 	+INVENTORY.UNDROPPABLE
@@ -205,7 +205,7 @@ ACTOR DevilIronFeet : PowerIronFeet
 	+NOTIMEFREEZE
 }
 
-ACTOR DevilTorch : PowerTorch
+Actor DevilTorch : PowerTorch
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -216,7 +216,7 @@ ACTOR DevilTorch : PowerTorch
 	+NOTIMEFREEZE
 }
 
-ACTOR DevilReflection : PowerReflection
+Actor DevilReflection : PowerReflection
 {
 	Damagefactor 1.0
 	Powerup.Duration 0x7FFFFFFD
@@ -228,7 +228,7 @@ ACTOR DevilReflection : PowerReflection
 	+NOTIMEFREEZE
 }
 
-ACTOR DevilSpeed25 : PowerSpeed
+Actor DevilSpeed25 : PowerSpeed
 {
 	Speed 2.5
 	Powerup.Duration 0x7FFFFFFD
@@ -240,15 +240,15 @@ ACTOR DevilSpeed25 : PowerSpeed
 	+NOTIMEFREEZE
 }
 
-ACTOR SatanIronFeet : PowerIronFeet
+Actor SatanIronFeet : PowerIronFeet
 {
 	Powerup.Duration 0x7FFFFFFD
 	Powerup.Color "FF FF FF", 0.01
-	DamageFactor "Slime", 0.0
-	DamageFactor "Lava", 0.0
-	DamageFactor "Poison", 0.0
-	DamageFactor "Acid", 0.0
-	DamageFactor "Virus", 0.0
+	Damagefactor "Slime", 0.0
+	Damagefactor "Lava", 0.0
+	Damagefactor "Poison", 0.0
+	Damagefactor "Acid", 0.0
+	Damagefactor "Virus", 0.0
 	+INVENTORY.HUBPOWER
 	+INVENTORY.PERSISTENTPOWER
 	+INVENTORY.UNDROPPABLE
@@ -257,7 +257,7 @@ ACTOR SatanIronFeet : PowerIronFeet
 	+NOTIMEFREEZE
 }
 
-/*ACTOR SatanFrightener : PowerFrightener
+/*Actor SatanFrightener : PowerFrightener
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -267,7 +267,7 @@ ACTOR SatanIronFeet : PowerIronFeet
 	+NOTIMEFREEZE
 }*/
 
-ACTOR SatanGhost : PowerGhost
+Actor SatanGhost : PowerGhost
 {
 	Powerup.Strength 80
 	Powerup.Duration 0x7FFFFFFD
@@ -278,7 +278,7 @@ ACTOR SatanGhost : PowerGhost
 	+NOTIMEFREEZE
 }
 
-ACTOR SatanRegeneration : PowerTargeter
+Actor SatanRegeneration : PowerTargeter
 {
 	Powerup.Duration 0x7FFFFFFD
 	+INVENTORY.HUBPOWER
@@ -296,7 +296,7 @@ ACTOR SatanRegeneration : PowerTargeter
 	}
 }
 
-ACTOR SatanProtection : PowerProtection
+Actor SatanProtection : PowerProtection
 {
 	Damagefactor 0.25
 	Powerup.Duration 0x7FFFFFFD
@@ -307,7 +307,7 @@ ACTOR SatanProtection : PowerProtection
 	+NOTIMEFREEZE
 }
 
-ACTOR SatanReflection : PowerReflection
+Actor SatanReflection : PowerReflection
 {
 	Damagefactor 4.0
 	Powerup.Duration 0x7FFFFFFD
@@ -326,7 +326,7 @@ ACTOR SatanReflection : PowerReflection
 	+NOTELEOTHER
 }
 
-ACTOR SatanDamage : PowerDamage
+Actor SatanDamage : PowerDamage
 {
 	Damagefactor 1.5
 	Powerup.Duration 0x7FFFFFFD
@@ -338,7 +338,7 @@ ACTOR SatanDamage : PowerDamage
 	+NOTIMEFREEZE
 }
 
-ACTOR StrengthCustomRune : CustomInventory
+Actor StrengthCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -386,7 +386,7 @@ ACTOR StrengthCustomRune : CustomInventory
 	}
 }
 
-ACTOR RageCustomRune : CustomInventory
+Actor RageCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -434,7 +434,7 @@ ACTOR RageCustomRune : CustomInventory
 	}
 }
 
-ACTOR DrainCustomRune : CustomInventory
+Actor DrainCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -482,7 +482,7 @@ ACTOR DrainCustomRune : CustomInventory
 	}
 }
 
-ACTOR SpreadCustomRune : CustomInventory
+Actor SpreadCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -530,7 +530,7 @@ ACTOR SpreadCustomRune : CustomInventory
 	}
 }
 
-ACTOR ResistanceCustomRune : CustomInventory
+Actor ResistanceCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -578,7 +578,7 @@ ACTOR ResistanceCustomRune : CustomInventory
 	}
 }
 
-ACTOR RegenerationCustomRune : CustomInventory
+Actor RegenerationCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -626,7 +626,7 @@ ACTOR RegenerationCustomRune : CustomInventory
 	}
 }
 
-ACTOR ProsperityCustomRune : CustomInventory
+Actor ProsperityCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -674,7 +674,7 @@ ACTOR ProsperityCustomRune : CustomInventory
 	}
 }
 
-ACTOR ReflectionCustomRune : CustomInventory
+Actor ReflectionCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -722,7 +722,7 @@ ACTOR ReflectionCustomRune : CustomInventory
 	}
 }
 
-ACTOR HighJumpCustomRune : CustomInventory
+Actor HighJumpCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -770,7 +770,7 @@ ACTOR HighJumpCustomRune : CustomInventory
 	}
 }
 
-ACTOR HasteCustomRune : CustomInventory
+Actor HasteCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -818,7 +818,7 @@ ACTOR HasteCustomRune : CustomInventory
 	}
 }
 
-ACTOR DemonCustomRune : CustomInventory
+Actor DemonCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -866,7 +866,7 @@ ACTOR DemonCustomRune : CustomInventory
 	}
 }
 
-ACTOR RavenCustomRune : CustomInventory
+Actor RavenCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -915,7 +915,7 @@ ACTOR RavenCustomRune : CustomInventory
 	}
 }
 
-ACTOR DevilCustomRune : CustomInventory
+Actor DevilCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -963,7 +963,7 @@ ACTOR DevilCustomRune : CustomInventory
 	}
 }
 
-ACTOR SatanCustomRune : CustomInventory
+Actor SatanCustomRune : CustomInventory
 {
 	+INVENTORY.NEVERRESPAWN
 	+INVENTORY.ALWAYSPICKUP
@@ -1011,7 +1011,7 @@ ACTOR SatanCustomRune : CustomInventory
 	}
 }
 
-ACTOR ActiveStrength : CustomInventory
+Actor ActiveStrength : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon STRRA
@@ -1034,7 +1034,7 @@ ACTOR ActiveStrength : CustomInventory
 	}
 }
 
-ACTOR ActiveRage : CustomInventory
+Actor ActiveRage : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon RAGRA
@@ -1057,7 +1057,7 @@ ACTOR ActiveRage : CustomInventory
 	}
 }
 
-ACTOR ActiveDrain : CustomInventory
+Actor ActiveDrain : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon DRARA
@@ -1080,7 +1080,7 @@ ACTOR ActiveDrain : CustomInventory
 	}
 }
 
-ACTOR ActiveSpread : CustomInventory
+Actor ActiveSpread : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon SPRRA
@@ -1103,7 +1103,7 @@ ACTOR ActiveSpread : CustomInventory
 	}
 }
 
-ACTOR ActiveResistance : CustomInventory
+Actor ActiveResistance : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon RESRA
@@ -1126,7 +1126,7 @@ ACTOR ActiveResistance : CustomInventory
 	}
 }
 
-ACTOR ActiveRegeneration : CustomInventory
+Actor ActiveRegeneration : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon REGRA
@@ -1149,7 +1149,7 @@ ACTOR ActiveRegeneration : CustomInventory
 	}
 }
 
-ACTOR ActiveProsperity: CustomInventory
+Actor ActiveProsperity: CustomInventory
 {
 	+INVBAR
 	Inventory.Icon PRSRA
@@ -1172,7 +1172,7 @@ ACTOR ActiveProsperity: CustomInventory
 	}
 }
 
-ACTOR ActiveReflection : CustomInventory
+Actor ActiveReflection : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon REFRA
@@ -1195,7 +1195,7 @@ ACTOR ActiveReflection : CustomInventory
 	}
 }
 
-ACTOR ActiveHighJump : CustomInventory
+Actor ActiveHighJump : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon HIJRA
@@ -1218,7 +1218,7 @@ ACTOR ActiveHighJump : CustomInventory
 	}
 }
 
-ACTOR ActiveHaste : CustomInventory
+Actor ActiveHaste : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon HASRA
@@ -1241,7 +1241,7 @@ ACTOR ActiveHaste : CustomInventory
 	}
 }
 
-ACTOR ActiveDemon : CustomInventory
+Actor ActiveDemon : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon ARTILSKL
@@ -1261,7 +1261,7 @@ ACTOR ActiveDemon : CustomInventory
 	}
 }
 
-ACTOR ActiveRaven : CustomInventory
+Actor ActiveRaven : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon ICRVA0
@@ -1280,7 +1280,7 @@ ACTOR ActiveRaven : CustomInventory
 	}
 }
 
-ACTOR ActiveDevil : CustomInventory
+Actor ActiveDevil : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon DEVIL
@@ -1300,7 +1300,7 @@ ACTOR ActiveDevil : CustomInventory
 	}
 }
 
-ACTOR ActiveSatan : CustomInventory
+Actor ActiveSatan : CustomInventory
 {
 	+INVBAR
 	Inventory.Icon SATAN
@@ -1560,7 +1560,7 @@ Actor DragItem : CustomInventory
 
 /*Actor DragQuadDamage : PowerDamage
 {
-	DamagefActor 4.0
+	Damagefactor 4.0
 	Powerup.Duration -120
 	+INVENTORY.HUBPOWER
 	+INVENTORY.PERSISTENTPOWER
@@ -1753,3 +1753,5 @@ Actor DragSideEffects : PowerTargeter
 		Loop
 	}
 }*/
+
+//#include "patch_template.dec"
