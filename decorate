@@ -357,6 +357,7 @@ Actor StrengthCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_STRENGTH"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -405,6 +406,7 @@ Actor RageCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_RAGE"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -453,6 +455,7 @@ Actor DrainCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_DRAIN"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -501,6 +504,7 @@ Actor SpreadCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_SPREAD"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -549,6 +553,7 @@ Actor ResistanceCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_RESISTANCE"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -597,6 +602,7 @@ Actor RegenerationCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_REGENERATION"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -645,6 +651,7 @@ Actor ProsperityCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_PROSPERITY"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -693,6 +700,7 @@ Actor ReflectionCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_REFLECTION"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -741,6 +749,7 @@ Actor HighJumpCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_HIGHJUMP"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -789,6 +798,7 @@ Actor HasteCustomRune : CustomInventory
 	Inventory.PickupMessage "$PICKUP_HASTE"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -837,6 +847,7 @@ Actor DemonCustomRune : CustomInventory
 	Inventory.PickupMessage "DemonRune"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -886,6 +897,7 @@ Actor RavenCustomRune : CustomInventory
 	Inventory.PickupMessage "RavenRune"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -934,6 +946,7 @@ Actor DevilCustomRune : CustomInventory
 	Inventory.PickupMessage "DevilRune"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
@@ -982,6 +995,7 @@ Actor SatanCustomRune : CustomInventory
 	Inventory.PickupMessage "SatanRune"
 	var int user_time;
 	Speed 20
+	FloatSpeed 20
 	States
 	{
 	Spawn:
