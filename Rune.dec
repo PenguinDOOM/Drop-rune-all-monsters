@@ -10,7 +10,7 @@ ACTOR Rune : Powerup
 
 ACTOR RuneDoubleDamage : PowerDamage
 {
-	Damagefactor normal, 2.0
+	Damagefactor 2.0 //To apply to all, normal should not be used
 }
 
 ACTOR RuneDoubleFiringSpeed : PowerDoubleFiringSpeed
@@ -27,7 +27,7 @@ ACTOR RuneSpread : PowerSpread
 
 ACTOR RuneHalfDamage : PowerProtection
 {
-	Damagefactor normal, 0.5
+	Damagefactor 0.5 //To apply to all, normal should not be used
 }
 
 ACTOR RuneRegeneration : PowerRegeneration
