@@ -1,4 +1,4 @@
-Version 3.2 and later are protected by the MIT license. So if you want to incorporate it into another project, you may copy and paste the content from my license file into your credit file.
+Version 4 and later are protected by the MIT license. So if you want to incorporate it into another project, you may copy and paste the content from my license file into your credit file.
 
 DO NOT REUPLOAD TO TSPG (Same for older versions)
 Submit a ban request to the admin for that mod.
